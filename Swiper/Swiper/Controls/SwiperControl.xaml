@@ -54,8 +54,32 @@
             </ContentView>
 
             <!--  Stacklayout for like here  -->
+            <StackLayout
+                x:Name="likeStackLayout"
+                Grid.Column="2"
+                Padding="0,100"
+                Opacity="0">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    Rotation="30"
+                    Text="LIKE"
+                    TextColor="DeepSkyBlue" />
+            </StackLayout>
 
             <!--  Stacklayout for deny here  -->
+            <StackLayout
+                x:Name="denyStackLayout"
+                Padding="0,100"
+                HorizontalOptions="End"
+                Opacity="0">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="30"
+                    Rotation="30"
+                    Text="DENY"
+                    TextColor="HotPink" />
+            </StackLayout>
         </Grid>
     </ContentView.Content>
 </ContentView>

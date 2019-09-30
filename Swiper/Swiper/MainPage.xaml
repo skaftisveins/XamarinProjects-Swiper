@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    BackgroundColor="LightSteelBlue"
     mc:Ignorable="d">
 
     <Grid x:Name="MainGrid" Padding="0,40">
@@ -14,7 +15,40 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="1" Padding="30">
-            <!--  Placeholder for later  -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="LIKES" />
+            <Label
+                x:Name="likeLabel"
+                Grid.Row="1"
+                Grid.Column="0"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="0" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="2"
+                Text="DENIED" />
+            <Label
+                x:Name="denyLabel"
+                Grid.Row="1"
+                Grid.Column="2"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="0" />
         </Grid>
     </Grid>
 
